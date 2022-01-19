@@ -1,0 +1,14 @@
+package com.institute;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class SpringDiTest {
+
+	public static void main(String[] args) {
+          ApplicationContext ctx=new ClassPathXmlApplicationContext("spring-di-xml");
+          Student st = ctx.getBean("stud", Student.class);
+	
+	}
+
+}

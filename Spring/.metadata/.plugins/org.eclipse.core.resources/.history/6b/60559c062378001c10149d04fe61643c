@@ -1,0 +1,10 @@
+package com.institute;
+
+public class SpringDiTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

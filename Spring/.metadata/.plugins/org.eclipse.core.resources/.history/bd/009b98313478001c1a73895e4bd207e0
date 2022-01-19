@@ -1,0 +1,47 @@
+package com.institute.bean;
+
+public class Employee {
+       private int id;
+       private String name;
+       private Address add;
+       private Experience expDtl;
+        public Employee() {
+        	
+        }
+		public Employee(int id, String name, Address add, Experience expe) {
+		
+			this.id = id;
+			this.name = name;
+			this.add = add;
+			this.expDtl = expDtl;
+		}
+		public int getId() {
+			return id;
+		}
+		public void setId(int id) {
+			
+		}
+		
+		public String getName() {
+			return name;
+		}
+		public void setName(String name) {
+			
+		}
+		
+		public Address getAdd() {
+			return add;
+		}
+		public void setAdd(Address address) {
+			
+		}
+		
+		public Experience getExpDtl() {
+			return expDtl;
+		} 
+		public void setExpe(Experience expe) {
+			
+		}
+	 
+       
+}

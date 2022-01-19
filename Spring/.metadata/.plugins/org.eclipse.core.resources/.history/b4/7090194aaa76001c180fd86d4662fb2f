@@ -1,0 +1,30 @@
+package com.institute;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	ApplicationContext ctx = new ClassPathXmlApplicationContext("spring-core-ci-config.xml");
+    	
+    	
+        System.out.println( "================CI=======================" );
+        Employee e = ctx.getBean("emp", Employee.class);
+        System.out.println("Employee Id :" +e.getId());
+        System.out.println("Employee Name : " + e.getName());
+        System.out.println("Employee Salary : " + e.getSalary());
+        System.out.println("Employee Contact :");
+        for(String contact:e.getContact()) {
+        	System.out.println(contact);
+        }
+        System.out.println("Employee Skills :" +e.getSkills());
+        System.out.println("Employee Address :" + e.getAddress());
+        System.out.println("Employee Companies : " + e.getCompanies());
+    }
+}
